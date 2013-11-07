@@ -40,15 +40,17 @@ object SqlServerCompare {
   	println(f"connecting to reference db stuff = $stuff, ")
   	println(s"connecting to reference db stuff = $stuff, ")
 
-  	Database.forURL(
-  		"jdbc:jtds:sqlserver://192.168.1.229:1433/omega_3.19", 
+  	val db = Database.forURL(
+  		"jdbc:jtds:sqlserver://192.168.1.229:1433/omega_3.2z", 
   		driver = "net.sourceforge.jtds.jdbc.Driver", 
-  		username = "username", 
-  		password= "password") 
-  	withSession {
-  		
+  		user = "admin_all", 
+  		password= "admin_all")
 
+
+	db withSession {
+  		
 	}
+		
 
  //  	val refSjt = createSimpleJdbcTemplate(
  //  		"jdbc:jtds:sqlserver://192.168.1.229:1433/omega_3.19", 
@@ -80,6 +82,8 @@ object SqlServerCompare {
 
 	// val queryEvaluator = QueryEvaluator("jdbc:jtds:sqlserver://192.168.1.229:1433/omega_3.19", "username", "password")
 	// val queryEvaluator = QueryEvaluator("192.168.1.229", "username", "password")
+
+	println("Hello")
 
 
 
