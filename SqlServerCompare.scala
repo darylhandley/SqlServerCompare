@@ -50,38 +50,6 @@ object SqlServerCompare {
 	db withSession {
   		
 	}
-		
-
- //  	val refSjt = createSimpleJdbcTemplate(
- //  		"jdbc:jtds:sqlserver://192.168.1.229:1433/omega_3.19", 
- //  		"username", 
- //  		"password"
-	// )
-
-
-	// val count = refSjt.queryForInt("select count(*) from sys.objects")
-	// println("Counted " + count + " objects in sys.objects")
-
-
-	// val compSjt = createSimpleJdbcTemplate(
- //  		"jdbc:jtds:sqlserver://192.168.1.229:1433/daryl_auto_test", 
- //  		"username", 
- //  		"password"
-	// )
-
-
-	// val count1 = compSjt.queryForInt("select count(*) from sys.objects")
-	// println("Counted " + count1 + " objects in sys.objects")
-
-
-
-	// val refObjects = refSjt.queryForList("select * from sys.objects")
-	// refObjects.each { row => 
-	// 	println(row.get("name"))
-	// }
-
-	// val queryEvaluator = QueryEvaluator("jdbc:jtds:sqlserver://192.168.1.229:1433/omega_3.19", "username", "password")
-	// val queryEvaluator = QueryEvaluator("192.168.1.229", "username", "password")
 
 	println("Hello")
 
