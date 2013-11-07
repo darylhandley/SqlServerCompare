@@ -43,8 +43,8 @@ object SqlServerCompare {
   	Database.forURL(
   		"jdbc:jtds:sqlserver://192.168.1.229:1433/omega_3.19", 
   		driver = "net.sourceforge.jtds.jdbc.Driver", 
-  		username = "admin_all", 
-  		password= "admin_all") 
+  		username = "username", 
+  		password= "password") 
   	withSession {
   		
 
@@ -52,8 +52,8 @@ object SqlServerCompare {
 
  //  	val refSjt = createSimpleJdbcTemplate(
  //  		"jdbc:jtds:sqlserver://192.168.1.229:1433/omega_3.19", 
- //  		"admin_all", 
- //  		"admin_all"
+ //  		"username", 
+ //  		"password"
 	// )
 
 
@@ -63,8 +63,8 @@ object SqlServerCompare {
 
 	// val compSjt = createSimpleJdbcTemplate(
  //  		"jdbc:jtds:sqlserver://192.168.1.229:1433/daryl_auto_test", 
- //  		"admin_all", 
- //  		"admin_all"
+ //  		"username", 
+ //  		"password"
 	// )
 
 
@@ -78,8 +78,8 @@ object SqlServerCompare {
 	// 	println(row.get("name"))
 	// }
 
-	// val queryEvaluator = QueryEvaluator("jdbc:jtds:sqlserver://192.168.1.229:1433/omega_3.19", "admin_all", "admin_all")
-	// val queryEvaluator = QueryEvaluator("192.168.1.229", "admin_all", "admin_all")
+	// val queryEvaluator = QueryEvaluator("jdbc:jtds:sqlserver://192.168.1.229:1433/omega_3.19", "username", "password")
+	// val queryEvaluator = QueryEvaluator("192.168.1.229", "username", "password")
 
 
 
