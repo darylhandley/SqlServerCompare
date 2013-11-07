@@ -9,28 +9,6 @@ import Database.threadLocalSession
  */ 
 object SqlServerCompare {
 
- //  def createSimpleJdbcTemplate(url: String, user: String, password: String) : SimpleJdbcTemplate = {
- //  	val datasource = new DriverManagerDataSource
- //  	datasource.setDriverClassName("net.sourceforge.jtds.jdbc.Driver")
- //  	datasource.setUrl(url)
- //  	datasource.setUsername(user)
- //  	datasource.setPassword(password)
-
- //  	return new SimpleJdbcTemplate(datasource)
-
- // //  		<bean id="dataSource"
-	// // 	class="org.springframework.jdbc.datasource.DriverManagerDataSource">
- 
-	// // 	<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-	// // 	<property name="url" value="jdbc:mysql://localhost:3306/mkyongjava" />
-	// // 	<property name="username" value="root" />
-	// // 	<property name="password" value="password" />
-	// // </bean>
-
-
-
- //  }
-
   def main(args: Array[String]) = {
 
   	println("Starting compare.")
